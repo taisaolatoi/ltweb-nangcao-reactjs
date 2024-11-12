@@ -1,15 +1,17 @@
 import React from "react";
+import { router } from "./routes/clientRoutes";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import AppRoutes from "./routes/Routes";
 import { RouterProvider } from "react-router-dom";
-
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+library.add(fas);
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <React.StrictMode>
-        <RouterProvider router={AppRoutes} />
+        <RouterProvider router={router} />
     </React.StrictMode>
 );
 

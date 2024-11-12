@@ -1,0 +1,101 @@
+.popup_body_login {
+    background-color: #fff;
+    border-radius: 16px;
+    box-sizing: border-box;
+    left: 50%;
+    max-height: 85vh;
+    max-width: 580px;
+    padding: 2rem;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vw;
+    padding: 25px;
+}
+
+.popup_body_login {
+    h2 {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    form {
+        max-width: 540px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    input {
+        margin-bottom: 15px;
+        background: #fff;
+        border: 1px solid #d9d9d9;
+        border-radius: 16px;
+        box-sizing: border-box;
+        height: 40px;
+        padding: 5px 20px;
+        transition: all .2s;
+        width: 100%;
+        height: 3.15rem;
+    }
+
+    .login_btn {
+        background-color: #000;
+        border: none;
+        border-radius: 100vmax;
+        color: #fff;
+        cursor: pointer;
+        display: block;
+        height: 50px;
+        margin-bottom: 8px;
+        margin-top: 1rem;
+        padding: 5px 20px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: all .2s;
+        width: 100%;
+    }
+
+    .login_btn:hover {
+        background-color: #d9d9d9;
+        color: #000;
+    }
+
+    .auth_actions a {
+        color: #2f5acf;
+        cursor: pointer;
+        transition: all .2s;
+        text-decoration: none;
+    }
+
+    .close_popup {
+        align-items: center;
+        background-color: #000;
+        border: 1.125px solid #fff;
+        border-radius: 100vmax;
+        box-shadow: 0 4.5px 5px rgba(0, 0, 0, .251);
+        box-sizing: border-box;
+        color: #fff;
+        cursor: pointer;
+        display: flex;
+        font-size: 1.5rem;
+        height: 50px;
+        justify-content: center;
+        position: absolute;
+        right: -25px;
+        top: -25px;
+        width: 50px;
+    }
+
+    .close_popup:hover {
+        transform: scale(1.1);
+    }
+    .in4_group{
+        display: flex;
+    }
+}
+
+// .popup_body_login form {
+//     max-width: 540px;
+//     display: flex;
+//     flex-direction: column;
+// }
