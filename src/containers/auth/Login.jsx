@@ -1,10 +1,11 @@
-import react from 'react'
+import React from 'react'
 import './Auth.scss'
-const LoginForm = () => {
+
+const LoginForm = ({ onClose, onToggle }) => { 
     return (
         <>
             <div className='popup_body_login'>
-                <span className='close_popup'>X</span>
+                <span className='close_popup' onClick={onClose}>X</span>
                 <div className='popup_wraper'>
                     <div className='popup_banner'>
                         <img src="https://mcdn.coolmate.me/image/March2024/mceclip4_81.jpg" alt="" />
@@ -18,7 +19,7 @@ const LoginForm = () => {
                         </form>
                     </div>
                     <div className="auth_actions">
-                        <a href="#">Đăng ký</a>
+                        <a href="#" onClick={onToggle}>Đăng ký</a> 
                     </div>
                 </div>
             </div>

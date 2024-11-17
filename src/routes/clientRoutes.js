@@ -3,6 +3,9 @@ import LoginForm from '../containers/auth/Login';
 import RegisForm from '../containers/auth/Register';
 import Content from '../component/content';
 import LayOut from '../containers/homepage/Layout';
+import ProductList from '../containers/productpage/productpage';
+import ProductDetail from '../containers/productdetail/productdetail';
+import InfoPage from '../containers/acount/info';
 
 export const router = createBrowserRouter([
     {
@@ -11,16 +14,20 @@ export const router = createBrowserRouter([
         children: [
             {
                 path: "/",
-                element: <Content />
+                element: <InfoPage />
             },
             {
-                path: "/login",
-                element: <LoginForm />
+                path: "/product",
+                element: <ProductList />
             },
             {
-                path: "/regis",
-                element: <RegisForm />
+                path: "/product_detail",
+                element: <ProductDetail />
             },
+            {
+                path: "/account",
+                element: <InfoPage />
+            }
         ]
     },
     {
