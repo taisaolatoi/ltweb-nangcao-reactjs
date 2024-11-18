@@ -89,10 +89,62 @@
     .close_popup:hover {
         transform: scale(1.1);
     }
-    .in4_group{
+
+    .in4_group {
         display: flex;
     }
+
+    .form_group_user {
+        margin-top: 5px;
+        position: relative;
+
+        label {
+            left: 1.4rem;
+            opacity: 0.8;
+            position: absolute;
+            top: 13%;
+            transform: translateY(-50%);
+            transition: all 0.3s;
+            font-size: small;
+        }
+
+        input {
+            background: #fff;
+            border: 1px solid #d9d9d9;
+            border-radius: 16px;
+            box-sizing: border-box;
+            height: 50px;
+            padding: 5px 20px;
+            padding-top: 20px;
+            transition: all .2s;
+            width: 100%;
+        }
+    }
+
+    .form_group_sex {
+        display: flex;
+
+        .group_sex {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+            gap: 5px;
+
+            input {
+                width: 20px;
+                margin-bottom: 0;
+            }
+        }
+
+
+    }
+
+    .account_in4_btn {
+        width: 100%;
+    }
+
 }
+
 
 // .popup_body_login form {
 //     max-width: 540px;

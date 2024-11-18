@@ -1,11 +1,13 @@
 import { createBrowserRouter } from 'react-router-dom';
-import LoginForm from '../containers/auth/Login';
-import RegisForm from '../containers/auth/Register';
 import Content from '../component/content';
 import LayOut from '../containers/homepage/Layout';
 import ProductList from '../containers/productpage/productpage';
 import ProductDetail from '../containers/productdetail/productdetail';
-import InfoPage from '../containers/acount/info';
+import LayOutAccount from '../containers/accountpage/Layoutaccount';
+import AccountPageIn4 from '../component/account-in4';
+import AccountPageOrder from '../component/account-order';
+import Cart from '../containers/cart/cart';
+import Province from '../containers/province/province.jsx';
 
 export const router = createBrowserRouter([
     {
@@ -14,7 +16,7 @@ export const router = createBrowserRouter([
         children: [
             {
                 path: "/",
-                element: <InfoPage />
+                element: <Content />
             },
             {
                 path: "/product",
@@ -25,8 +27,26 @@ export const router = createBrowserRouter([
                 element: <ProductDetail />
             },
             {
+                path: "/cart",
+                element: <Cart />
+            },
+            {
+                path: "/province",
+                element: <Province />
+            },
+            {
                 path: "/account",
-                element: <InfoPage />
+                element: <LayOutAccount />,
+                children: [
+                    {
+                        path: "/account",
+                        element: <AccountPageIn4 />
+                    },
+                    {
+                        path: "/account/order",
+                        element: <AccountPageOrder />
+                    }
+                ]
             }
         ]
     },

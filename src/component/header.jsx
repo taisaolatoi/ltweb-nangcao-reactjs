@@ -66,7 +66,7 @@ const Header = () => {
                     )}
                 </div>
                 <div className="header_actions_btn">
-                    <a href="">
+                    <a href="/cart">
                         <img src={cart_icon} alt="" />
                     </a>
                 </div>
