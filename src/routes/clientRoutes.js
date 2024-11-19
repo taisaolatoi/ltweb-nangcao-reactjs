@@ -8,6 +8,7 @@ import AccountPageIn4 from '../component/account-in4';
 import AccountPageOrder from '../component/account-order';
 import Cart from '../containers/cart/cart';
 import Province from '../containers/province/province.jsx';
+import Search from '../containers/searchpage/search.jsx';
 
 export const router = createBrowserRouter([
     {
@@ -33,6 +34,10 @@ export const router = createBrowserRouter([
             {
                 path: "/province",
                 element: <Province />
+            },
+            {
+                path: "/search",
+                element: <Search />
             },
             {
                 path: "/account",
